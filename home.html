@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home</title> 
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+<script src="https://kit.fontawesome.com/83a0509ca6.js" crossorigin="anonymous"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .row{
+        margin: 0px;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-top-fixed.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="img/bootstrap-logo-white.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item d-block d-md-none">
+          <a class="nav-link" href="#" style="color: #fff;" onclick="$('.navbar-toggler').click(); $('#prox').addClass('d-block'); $('#prox').removeClass('d-none'); $('#prox').removeClass('d-md-block');">Mis siguientes reservaciones</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff;">
+            <i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;Benjamín Dorantes
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-id-card"></i>&nbsp;&nbsp;Mi información</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;Cerrar sesión</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container-fluid" style="padding: 0px;">
+  <div class="row">
+    <div id="prox" class="d-none d-md-block col-md-4 col-lg-3 bg-light" style="padding: 15px; height: 94vh; text-align: center; position: relative;">
+      <button type="button" class="btn-close d-block d-md-none" aria-label="Close" style="position: absolute; right: 15px;" onclick="$('#prox').removeClass('d-block'); $('#prox').addClass('d-none'); $('#prox').addClass('d-md-block');"></button>
+      <b>Mis próximas reservaciones</b>
+      <hr>
+      <div class="alert alert-primary" role="alert">
+        <button type="button" class="btn-close" aria-label="Close" style="position:absolute; top: 5px; right: 5px;" onclick="$('#modal_cancela').modal('show');"></button>
+        <b>Comedor 3</b><br>
+        <div style="display: flex; justify-content: space-evenly; font-size: 14px; margin-top: 1em;" >
+          <span><i class="fa-solid fa-calendar-days"></i> 31/05/2022</span>
+          <span><i class="fa-solid fa-clock"></i> 01:30 pm</span>
+        </div>
+      </div>
+      <div class="alert alert-primary" role="alert">
+        <button type="button" class="btn-close" aria-label="Close" style="position:absolute; top: 5px; right: 5px;" onclick="$('#modal_cancela').modal('show');"></button>
+        <b>Comedor 2</b><br>
+        <div style="display: flex; justify-content: space-evenly; font-size: 14px; margin-top: 1em;" >
+          <span><i class="fa-solid fa-calendar-days"></i> 01/06/2022</span>
+          <span><i class="fa-solid fa-clock"></i> 08:00 am</span>
+        </div>
+      </div>
+      <div class="alert alert-primary" role="alert">
+        <button type="button" class="btn-close" aria-label="Close" style="position:absolute; top: 5px; right: 5px;" onclick="$('#modal_cancela').modal('show');"></button>
+        <b>Comedor 1</b><br>
+        <div style="display: flex; justify-content: space-evenly; font-size: 14px; margin-top: 1em;" >
+          <span><i class="fa-solid fa-calendar-days"></i> 01/06/2022</span>
+          <span><i class="fa-solid fa-clock"></i> 04:00 pm</span>
+        </div>
+      </div>
+      <div class="alert alert-primary" role="alert">
+        <button type="button" class="btn-close" aria-label="Close" style="position:absolute; top: 5px; right: 5px;" onclick="$('#modal_cancela').modal('show');"></button>
+        <b>Comedor 3</b><br>
+        <div style="display: flex; justify-content: space-evenly; font-size: 14px; margin-top: 1em;" >
+          <span><i class="fa-solid fa-calendar-days"></i> 02/06/2022</span>
+          <span><i class="fa-solid fa-clock"></i> 01:30 pm</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 col-lg-9" style="padding: 15px;">
+      <div class="row">
+        <div class="col-12 col-md-7" style="text-align: center;">
+          <h3>Reservar lugar</h3>
+        </div> 
+        <div class="col-12 col-md-5" style="padding: 0px; padding-bottom: 5px;">
+          <div class="row" style="margin: 0px;">
+            <div class="col">
+              <div class="input-group input-group-sm">
+                <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa-solid fa-calendar-days"></i></span>
+                <input type="text" id="fecha" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group input-group-sm">
+                <label class="input-group-text" for="inputGroupSelect01"><i class="fa-solid fa-clock"></i></label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option>08:00 am</option>
+                  <option>08:30 am</option>
+                  <option>09:00 am</option>
+                  <option>09:30 am</option>
+                  <option>01:30 pm</option>
+                  <option>02:00 pm</option>
+                  <option>02:30 pm</option>
+                  <option>03:00 pm</option>
+                  <option>03:30 pm</option>
+                  <option>04:00 pm</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="col-12">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/1.jpeg" width="100%" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5 class="card-title">Comedor 1</h5></center>
+                  <p class="card-text">Capacidad: 20 personas</p>
+                  <p class="card-text">Ocupación:</p>
+                  <div class="progress" style="margin-bottom: 1.5em;">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                  </div>
+                  <center>
+                    <button class="btn btn-primary" onclick="$('#modal_confirma').modal('show');">Reservar</button>
+                  </center>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/1.jpeg" width="100%" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5 class="card-title">Comedor 2</h5></center>
+                  <p class="card-text">Capacidad: 15 personas</p>
+                  <p class="card-text">Ocupación:</p>
+                  <div class="progress" style="margin-bottom: 1.5em;">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                  </div>
+                  <center>
+                    <button class="btn btn-primary" onclick="$('#modal_confirma').modal('show');">Reservar</button>
+                  </center>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/1.jpeg" width="100%" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <center><h5 class="card-title">Comedor 3</h5></center>
+                  <p class="card-text">Capacidad: 35 personas</p>
+                  <p class="card-text">Ocupación:</p>
+                  <div class="progress" style="margin-bottom: 1.5em;">
+                    <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                  </div>
+                  <center>
+                    <button class="btn btn-primary" onclick="$('#modal_confirma').modal('show');">Reservar</button>
+                  </center>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="modal fade" id="modal_confirma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Confirmar reservación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Estás seguro que deseas realizar esta reservación?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_cancela" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cancelar reservación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Estás seguro que deseas cancelar esta reservación?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(function() {
+        $('#fecha').daterangepicker({
+          singleDatePicker: true,
+          showDropdowns: true,
+          minDate: moment(),
+          locale: {
+            format: 'DD/MM/YYYY',
+            daysOfWeek: [
+                "D",
+                "L",
+                "M",
+                "X",
+                "J",
+                "V",
+                "S"
+            ],
+            monthNames: [
+                "Enero",
+                "Febrero",
+                "Marzo",
+                "Abril",
+                "Mayo",
+                "Junio",
+                "Julio",
+                "Agosto",
+                "Septiembre",
+                "Octubre",
+                "Noviembre",
+                "Diciembre"
+            ],
+            firstDay: 0,
+            applyLabel: "Aceptar",
+            cancelLabel: "Cancelar",
+          }
+        });
+      });
+    </script>  
+  </body>
+</html>
